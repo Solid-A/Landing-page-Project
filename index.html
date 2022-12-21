@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <button id="to-top">Top</button>
+    <header class="main__hero">
+      <h1>Landing Page</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Web Dev">
+      <div class="landing__container">
+        <h2>Web Development</h2>
+        <button class="click">Click For Text</button>
+        <div class="coll">
+          <p><span>Web development</span> is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</p>
+
+          <p>Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding. Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.</p>
+        </div>
+      </div>
+    </section>
+    <section id="section2" data-nav="Agile">
+      <div class="landing__container">
+        <h2>Agile Frameworks</h2>
+        <button class="click">Click For Text</button>
+        <div class="coll">
+          <p>Most <span>agile</span> development methods break product development work into small increments that minimize the amount of up-front planning and design. Iterations, or sprints, are short time frames (timeboxes) that typically last from one to four weeks. Each iteration involves a cross-functional team working in all functions: planning, analysis, design, coding, unit testing, and acceptance testing. At the end of the iteration a working product is demonstrated to stakeholders, This minimizes overall risk and allows the product to adapt to changes quickly, An iteration might not add enough functionality to warrant a market release, but the goal is to have an available release (with minimal bugs) at the end of each iteration.</p>
+
+          <p>Through incremental development, products have room to "fail often and early" throughout each iterative phase instead of drastically on a final release date, Multiple iterations might be required to release a product or new features. Working software is the primary measure of progress.</p>
+        </div>
+      </div>
+    </section>
+    <section id="section3" data-nav="Freelance">
+      <div class="landing__container">
+        <h2>Managing Freelancing</h2>
+        <button class="click">Click For Text</button>
+        <div class="coll">
+          <p>Many <span>freelancers</span> forget to record the huge communications slice of their work. You need visibility of all the client calls, emails, on-site meetings and walkthroughs that go into each project. Without it you can’t accurately scope project length, bill for all your rightful project hours or tackle inefficiencies in your workflow.</p>
+  
+          <p>Everything you do as a freelancer should be laid out in a way that makes it easy for you to manage all your weekly commitments and your capacity. Most people opt for a calendar to plan the basics: schedule meetings, plan in work, highlight deadlines and quickly find free time. But you should also think about an easy way to structure tasks and progress for each project, to ensure you know your priorities.</p>
+        </div>
+      </div>
+    </section>
+    <section id="section4" data-nav="Career">
+      <div class="landing__container">
+        <h2>Career Services</h2>
+        <button class="click">Click For Text</button>
+        <div class="coll">
+          <p><span>A career</span> services advisor is going to be your go-to throughout your college life. They will help you in any way they can in managing your credentials, making important decisions that will further you along in meeting your career goals, and making sure you’re prepared for the professional road ahead after you graduate. Their job is to make sure that you are taking internships and service opportunities that will advance you in your field, you are prepared to write a good resume, that you perform your best in a job interview, and that you excel in your chosen career. </p>
+
+          <p>This article is suited to two types of people—those looking for a career services advisor and those who want to become a career services advisor. In this piece, we will be discussing the general roles and professional skills of career services advisors, where they work, what kind of education they go through, and where you can find them. So, if you have ever been curious about either finding a career services advisor for yourself or becoming a career services advisor, keep reading to find out more about this exciting career path.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+    <p>@December-Cohort-Web</p>
+    <a href="https://github.com/Solid-A" target="_blank">My github</a>
+    <a href="https://www.linkedin.com/in/ahmed-farouk-516364a8" target="_blank">My linkedin Profile</a>
+ 
+  </footer>
+  <!-- Load javaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
