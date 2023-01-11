@@ -119,6 +119,14 @@ window.onscroll = () => {
 
 //Add a scroll to the top button
 
+document.addEventListener('scroll', () =>{ 
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
+        toTop.style.display = 'block';
+    }else{
+        toTop.style.display = 'none';
+    }
+})
+
 toTop.addEventListener('click', function(){
     window.scrollTo({
         top: 0,
