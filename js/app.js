@@ -109,13 +109,12 @@ collView();
 //Hide fixed navigation
 
 window.onscroll = () => {
-    head.style.transform = 'none';
+    // head.style.transform = 'none';
     setTimeout(() =>{
         head.style.transform = 'Translate(0px, -60px)';
         head.style.transition = 'all 0.5s ease-in-out';
-    }, 3000);
+    }, 1000);
 };
-
 
 //Add a scroll to the top button
 

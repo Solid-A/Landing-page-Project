@@ -175,6 +175,11 @@ section {
     border: none;
     border-radius: 5px; 
     font-size: 16px;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
 }
 
 section:nth-of-type(even) .landing__container {
