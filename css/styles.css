@@ -10,11 +10,14 @@
 
 
 /* ---- Base Rules ---- */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background: rgb(241, 241, 241);
     background: linear-gradient(0deg, rgb(241, 241, 241) 83%, #00b6b6 100%);
     margin: 0;
-    font-family: 'Merriweather', serif;
     color: #fff;
 }
 
@@ -24,7 +27,9 @@ h1 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 3em;
     margin: 2em 1rem;
-    color: #000;
+    color: #000000;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+
 }
 
 h2 {
@@ -32,6 +37,7 @@ h2 {
     font-family: 'Oxygen', Sans-Serif;
     font-size: 3em;
     color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 3px rgb(85, 85, 85);
     margin-bottom: 0px;
     padding: 10px;
 }
@@ -84,21 +90,26 @@ section {
 
 .navbar__menu{
     background-color: #2B3467;
+    box-shadow: 0px 3px 5px 0px rgb(255, 255, 255);
 }
 
 .navbar__menu ul {
+    display: flex;
+    justify-content: flex-start;
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 .navbar__menu li {
-    display: inline-block;
+    list-style: none;
+    width: 10em;
 }
 
 .navbar__menu .menu__link {
-    display: block;
-    padding: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 0.7em;
     font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -133,7 +144,7 @@ section {
 
 /* Footer Styles */
 .page__footer {
-    background: #000000;
+    background: #2B3467;
     padding: 3em;
     text-align: center;
 }
@@ -168,13 +179,14 @@ section {
 
 #to-top{
     position: fixed; 
-    bottom: 40px; 
-    right: 40px; 
+    bottom: 50px; 
+    right: 50px; 
     z-index: 999;
-    background-color: #2B3467; 
+    background-color: #2B3467;
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0),0px 0px 10px 1px rgb(238, 238, 238) inset;
     color: white; 
     padding: 15px; 
-    border: none;
+    border: 1px solid #2B3467;
     border-radius: 5px; 
     font-size: 16px;
     cursor: pointer;
@@ -308,10 +320,11 @@ section.active-class .landing__container::after {
     }
 
     .navbar__menu li {
-        display: block;
+        
     }
-
+    
     .navbar__menu ul {
+        display: block;
         padding-left: 0;
         margin: 0;
         text-align: center;

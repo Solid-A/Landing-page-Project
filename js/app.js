@@ -109,10 +109,10 @@ collView();
 //Hide fixed navigation
 
 window.onscroll = () => {
-    head.style.transform = 'none';
+    head.style.transform = 'Translate(0px, -250px)';
+    head.style.transition = 'all 0.5s ease-in-out';
     setTimeout(() =>{
-        head.style.transform = 'Translate(0px, -160px)';
-        head.style.transition = 'all 0.5s ease-in-out';
+        head.style.transform = 'none';
     }, 3000);
 }
 
@@ -126,10 +126,9 @@ document.addEventListener('scroll', () =>{
     }
 })
 
-toTop.addEventListener('click', function(){
+toTop.addEventListener('click', ()=>{
     window.scrollTo({
         top: 0,
-        left: 0,
         behavior: 'smooth'
     })
 })
