@@ -85,27 +85,6 @@ function makeActive(){
 document.addEventListener("scroll", function() { makeActive();});
 
 
-
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-// function collView(){
-//     for (let i of collapsible) {
-//         i.addEventListener("click", () => {
-//             let content = i.nextElementSibling;
-//             if (content.style.display === "block") {
-//                     content.style.display = "none";
-//             } else {
-//                     content.style.display = "block";
-//             }
-//         })
-//     }
-// }
-// collView();
-
-
 //Hide fixed navigation
 
 window.onscroll = () => {
