@@ -91,19 +91,19 @@ document.addEventListener("scroll", function() { makeActive();});
  * Begin Events
  * 
 */
-function collView(){
-    for (let i of collapsible) {
-        i.addEventListener("click", () => {
-            let content = i.nextElementSibling;
-            if (content.style.display === "block") {
-                    content.style.display = "none";
-            } else {
-                    content.style.display = "block";
-            }
-        })
-    }
-}
-collView();
+// function collView(){
+//     for (let i of collapsible) {
+//         i.addEventListener("click", () => {
+//             let content = i.nextElementSibling;
+//             if (content.style.display === "block") {
+//                     content.style.display = "none";
+//             } else {
+//                     content.style.display = "block";
+//             }
+//         })
+//     }
+// }
+// collView();
 
 
 //Hide fixed navigation

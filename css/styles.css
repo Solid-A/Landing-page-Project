@@ -42,23 +42,26 @@ h2 {
     padding: 10px;
 }
 
-.click{  /* button to view text */
+summary{  /* button to view text */
     display: block;
     margin: 0px auto auto;
     width: 100%;
-    box-shadow: 0 8px 20px 0px rgb(255, 255, 255);
+    box-shadow: 0 10px 20px 0px rgb(66, 132, 255);
     border: none;
     font-size: 1em;
     font-weight: bold;
     background-color: #2B3467;
     color: #fff;
     padding: 0.3em;
+    text-align: center;
+    cursor: pointer;
 }
 
-p {
+section p {
     line-height: 1.6em;
     color: rgb(0, 0, 0);
     padding: 10px;
+    text-align: justify;
 }
 p span{
     font-weight: bold;
@@ -171,10 +174,6 @@ section {
 .landing__container {
     padding: 1em;
     text-align: left;
-}
-
-.coll{
-    display: none;/* collapsible  */
 }
 
 #to-top{
